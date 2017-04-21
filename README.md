@@ -18,8 +18,8 @@ Bootstrap the project
 ---------------------
 
 ```
-cd jupyter-starter
-mkvirtualenv TKTK
+cd name-of-project
+mkvirtualenv name-of-project
 pip install -r requirements.txt
 ```
 
@@ -32,21 +32,27 @@ Run the notebook
 jupyter notebook
 `
 
+The homepage of the notebook should open automatically in your preferred browser. Notebooks generally run on `localhost:8888` if it is the sole notebook running.
+
+Create a new Python 2 notebook in the upper right-hand corner of the home screen.
+
 Import the libraries in the first cell
 ---------------
 
 ```
 # -*- coding: utf-8 -*-
 %matplotlib inline
+
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import math
 import matplotlib as mplstyle
 import matplotlib.pyplot as plt
-import locale from locale
-import atof from dateutil
-import parser from datetime
-import datetime
+import locale
 import arrow
+from locale import atof
+from dateutil import parser
+from datetime import datetime
 ```
+
+To run the cells, either use `cmd + <enter>` or use the navigation: cell -> run all 
